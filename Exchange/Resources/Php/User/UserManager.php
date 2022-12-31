@@ -30,8 +30,6 @@ class UserManager {
 
             $user = new User($username, $exchange, $apiKey, $apiSecret);
             $this->connected_users[$username] = $user;
-            array_push($this->connected_users, 'test');
-            var_dump($this->connected_users);
             return true;
         }
     
